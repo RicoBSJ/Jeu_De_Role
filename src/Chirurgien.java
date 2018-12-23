@@ -3,7 +3,7 @@ import comportement.*;
 public class Chirurgien extends Personnage {
 
 	public Chirurgien() {
-		    this.soin = new PremierSoin();
+		    this.soin = new Operation();
 		  }
 
 	public Chirurgien(EspritCombatif esprit, Soin soin, Deplacement dep) {
