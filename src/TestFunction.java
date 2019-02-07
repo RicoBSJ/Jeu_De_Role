@@ -9,10 +9,10 @@ public class TestFunction {
 		List<Personne> lPersonne = Arrays.asList(new Personne(10, "toto"), new Personne(20, "titi"),
 				new Personne(30, "tata"), new Personne(40, "tutu"));
 
-		Function<Personne, String> f1 = (Personne p) -> p.getNom(null);
+		Function<Personne, String> f1 = (Personne p) -> p.getNom();
 		// On ne multiplie plus l'age par 2
 		Function<Personne, Integer> f2 = (Personne p) -> p.getAge(0);
-		// Nous définissons un traitement supplémentaire sur l'âge
+		// Nous dï¿½finissons un traitement supplï¿½mentaire sur l'ï¿½ge
 		Function<Integer, Integer> f3 = (Integer a) -> a * 2;
 		System.out.println(transformToListString(lPersonne, f1));
 		System.out.println(transformToListInt(lPersonne, f2.andThen(f3)));
@@ -31,7 +31,7 @@ public class TestFunction {
 		List<Integer> ls = new ArrayList<>();
 		for (Personne p : list) {
 			ls.add(func.apply(p));
-			// func.apply(p) retournera ici l'âge multiplié par 2 de l'objet Personne
+			// func.apply(p) retournera ici l'ï¿½ge multipliï¿½ par 2 de l'objet Personne
 		}
 		return ls;
 	}

@@ -5,9 +5,9 @@ public class Personne {
 		// TODO Auto-generated constructor stub
 	}
 
-	public String getNom(String nom) {
+	public String getNom() {
 		// TODO Auto-generated method stub
-		return nom;
+		return null;
 	}
 
 	public Object setAge(int i) {
@@ -15,7 +15,7 @@ public class Personne {
 		return null;
 	}
 
-	public int getAge() {
+	public int getAge(int i) {
 		// TODO Auto-generated method stub
 		return 0;
 	}
