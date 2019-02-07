@@ -1,6 +1,6 @@
 import comportement.*;
 
-class Test {
+class OtherTest {
 
 	public static void main(String[] args) {
 		Personnage pers = new Guerrier();
