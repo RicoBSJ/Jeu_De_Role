@@ -10,10 +10,13 @@ class TestV2 {
 
 		// Utilisation d'une classe anonyme
 		pers.setSoin(new Soin() {
-			public void soigne() {
+			public void soigner() {
 				System.out.println("Je soigne avec une classe anonyme ! ");
 			}
 		});
 		pers.soigner();
+		// lambda
+		Dialoguer d = (s) -> System.out.println("Tu as dis : " + s);
+		d.parler("Bonjour");
 	}
 }
