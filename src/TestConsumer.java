@@ -9,7 +9,7 @@ public class TestConsumer {
 				new Personne(30, "tata"), new Personne(40, "tutu"));
 
 		System.out.println(lPersonne);
-		Consumer<Personne> c = (Personne p) -> p.setAge(p.getAge() + 13);
+		Consumer<Personne> c = (Personne p) -> p.setAge(p.getAge(0) + 13);
 		for (Personne p : lPersonne)
 			c.accept(p);
 		System.out.println(lPersonne);

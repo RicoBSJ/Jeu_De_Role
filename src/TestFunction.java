@@ -9,9 +9,9 @@ public class TestFunction {
 		List<Personne> lPersonne = Arrays.asList(new Personne(10, "toto"), new Personne(20, "titi"),
 				new Personne(30, "tata"), new Personne(40, "tutu"));
 
-		Function<Personne, String> f1 = (Personne p) -> p.getNom();
+		Function<Personne, String> f1 = (Personne p) -> p.getNom(null);
 		// On ne multiplie plus l'age par 2
-		Function<Personne, Integer> f2 = (Personne p) -> p.getAge();
+		Function<Personne, Integer> f2 = (Personne p) -> p.getAge(0);
 		// Nous définissons un traitement supplémentaire sur l'âge
 		Function<Integer, Integer> f3 = (Integer a) -> a * 2;
 		System.out.println(transformToListString(lPersonne, f1));
